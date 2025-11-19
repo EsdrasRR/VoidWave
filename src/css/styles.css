@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+html,body{ height:100%; margin:0; background:#0b1220; color:#e6eef6; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue'; }
+#game-container{ width:100%; height:100vh; display:flex; align-items:center; justify-content:center; }
+canvas{
+  /* Render at native pixel resolution (320x180) and scale up with CSS */
+  image-rendering: pixelated;
+  width: 960px;  /* scale x3 */
+  height: 540px; /* scale x3 */
+  background: #081018;
+  border: 4px solid #0f1724;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  display:block;
+}
+
+/* HUD */
+.hud {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 14px;
+  color: #dbeafe;
+}
